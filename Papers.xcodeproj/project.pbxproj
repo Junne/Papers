@@ -14,6 +14,11 @@
 		798F12551C4A6B650064EFD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 798F12531C4A6B650064EFD2 /* LaunchScreen.storyboard */; };
 		798F12601C4A6B650064EFD2 /* PapersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798F125F1C4A6B650064EFD2 /* PapersTests.swift */; };
 		798F126B1C4A6B650064EFD2 /* PapersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798F126A1C4A6B650064EFD2 /* PapersUITests.swift */; };
+		798F12801C4A6FE20064EFD2 /* Papers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 798F127F1C4A6FE20064EFD2 /* Papers.plist */; };
+		798F12841C4A736B0064EFD2 /* MasterCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798F12831C4A736B0064EFD2 /* MasterCollectionViewController.swift */; };
+		798F12861C4A74B20064EFD2 /* Paper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798F12851C4A74B20064EFD2 /* Paper.swift */; };
+		798F12881C4A76090064EFD2 /* PapersDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798F12871C4A76090064EFD2 /* PapersDataSource.swift */; };
+		798F128A1C4A92150064EFD2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798F12891C4A92150064EFD2 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		798F12661C4A6B650064EFD2 /* PapersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PapersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		798F126A1C4A6B650064EFD2 /* PapersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PapersUITests.swift; sourceTree = "<group>"; };
 		798F126C1C4A6B650064EFD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		798F127F1C4A6FE20064EFD2 /* Papers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Papers.plist; sourceTree = "<group>"; };
+		798F12831C4A736B0064EFD2 /* MasterCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterCollectionViewController.swift; sourceTree = "<group>"; };
+		798F12851C4A74B20064EFD2 /* Paper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Paper.swift; sourceTree = "<group>"; };
+		798F12871C4A76090064EFD2 /* PapersDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PapersDataSource.swift; sourceTree = "<group>"; };
+		798F12891C4A92150064EFD2 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +107,13 @@
 		798F12491C4A6B650064EFD2 /* Papers */ = {
 			isa = PBXGroup;
 			children = (
-				798F124A1C4A6B650064EFD2 /* AppDelegate.swift */,
-				798F124C1C4A6B650064EFD2 /* ViewController.swift */,
-				798F124E1C4A6B650064EFD2 /* Main.storyboard */,
-				798F12511C4A6B650064EFD2 /* Assets.xcassets */,
-				798F12531C4A6B650064EFD2 /* LaunchScreen.storyboard */,
-				798F12561C4A6B650064EFD2 /* Info.plist */,
+				798F127E1C4A6F9D0064EFD2 /* Resources */,
+				798F127D1C4A6F950064EFD2 /* Other */,
+				798F127C1C4A6F7B0064EFD2 /* Models */,
+				798F127B1C4A6F520064EFD2 /* Layouts */,
+				798F127A1C4A6F4C0064EFD2 /* Layout */,
+				798F12791C4A6F400064EFD2 /* Data Sources */,
+				798F12781C4A6F320064EFD2 /* Controllers */,
 			);
 			path = Papers;
 			sourceTree = "<group>";
@@ -123,6 +134,66 @@
 				798F126C1C4A6B650064EFD2 /* Info.plist */,
 			);
 			path = PapersUITests;
+			sourceTree = "<group>";
+		};
+		798F12781C4A6F320064EFD2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				798F124C1C4A6B650064EFD2 /* ViewController.swift */,
+				798F12831C4A736B0064EFD2 /* MasterCollectionViewController.swift */,
+				798F12891C4A92150064EFD2 /* DetailViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		798F12791C4A6F400064EFD2 /* Data Sources */ = {
+			isa = PBXGroup;
+			children = (
+				798F12871C4A76090064EFD2 /* PapersDataSource.swift */,
+			);
+			name = "Data Sources";
+			sourceTree = "<group>";
+		};
+		798F127A1C4A6F4C0064EFD2 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				798F124E1C4A6B650064EFD2 /* Main.storyboard */,
+				798F12531C4A6B650064EFD2 /* LaunchScreen.storyboard */,
+			);
+			name = Layout;
+			sourceTree = "<group>";
+		};
+		798F127B1C4A6F520064EFD2 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Layouts;
+			sourceTree = "<group>";
+		};
+		798F127C1C4A6F7B0064EFD2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				798F12851C4A74B20064EFD2 /* Paper.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		798F127D1C4A6F950064EFD2 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				798F124A1C4A6B650064EFD2 /* AppDelegate.swift */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		798F127E1C4A6F9D0064EFD2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				798F12511C4A6B650064EFD2 /* Assets.xcassets */,
+				798F12561C4A6B650064EFD2 /* Info.plist */,
+				798F127F1C4A6FE20064EFD2 /* Papers.plist */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				798F12551C4A6B650064EFD2 /* LaunchScreen.storyboard in Resources */,
+				798F12801C4A6FE20064EFD2 /* Papers.plist in Resources */,
 				798F12521C4A6B650064EFD2 /* Assets.xcassets in Resources */,
 				798F12501C4A6B650064EFD2 /* Main.storyboard in Resources */,
 			);
@@ -258,6 +330,10 @@
 			files = (
 				798F124D1C4A6B650064EFD2 /* ViewController.swift in Sources */,
 				798F124B1C4A6B650064EFD2 /* AppDelegate.swift in Sources */,
+				798F12861C4A74B20064EFD2 /* Paper.swift in Sources */,
+				798F128A1C4A92150064EFD2 /* DetailViewController.swift in Sources */,
+				798F12881C4A76090064EFD2 /* PapersDataSource.swift in Sources */,
+				798F12841C4A736B0064EFD2 /* MasterCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
