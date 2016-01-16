@@ -19,6 +19,8 @@
 		798F12861C4A74B20064EFD2 /* Paper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798F12851C4A74B20064EFD2 /* Paper.swift */; };
 		798F12881C4A76090064EFD2 /* PapersDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798F12871C4A76090064EFD2 /* PapersDataSource.swift */; };
 		798F128A1C4A92150064EFD2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798F12891C4A92150064EFD2 /* DetailViewController.swift */; };
+		798F128D1C4A9A780064EFD2 /* PaperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798F128C1C4A9A780064EFD2 /* PaperCell.swift */; };
+		798F128F1C4AA06C0064EFD2 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798F128E1C4AA06C0064EFD2 /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		798F12851C4A74B20064EFD2 /* Paper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Paper.swift; sourceTree = "<group>"; };
 		798F12871C4A76090064EFD2 /* PapersDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PapersDataSource.swift; sourceTree = "<group>"; };
 		798F12891C4A92150064EFD2 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		798F128C1C4A9A780064EFD2 /* PaperCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaperCell.swift; sourceTree = "<group>"; };
+		798F128E1C4AA06C0064EFD2 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 		798F12491C4A6B650064EFD2 /* Papers */ = {
 			isa = PBXGroup;
 			children = (
+				798F128B1C4A9A520064EFD2 /* Views */,
 				798F127E1C4A6F9D0064EFD2 /* Resources */,
 				798F127D1C4A6F950064EFD2 /* Other */,
 				798F127C1C4A6F7B0064EFD2 /* Models */,
@@ -194,6 +199,15 @@
 				798F127F1C4A6FE20064EFD2 /* Papers.plist */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		798F128B1C4A9A520064EFD2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				798F128C1C4A9A780064EFD2 /* PaperCell.swift */,
+				798F128E1C4AA06C0064EFD2 /* GradientView.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,6 +348,8 @@
 				798F128A1C4A92150064EFD2 /* DetailViewController.swift in Sources */,
 				798F12881C4A76090064EFD2 /* PapersDataSource.swift in Sources */,
 				798F12841C4A736B0064EFD2 /* MasterCollectionViewController.swift in Sources */,
+				798F128F1C4AA06C0064EFD2 /* GradientView.swift in Sources */,
+				798F128D1C4A9A780064EFD2 /* PaperCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
